@@ -1,0 +1,60 @@
+.clock{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: black;
+    border-color: red;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.clock > p {
+    text-align: center;
+    color: red;
+}
+.second {
+    position: absolute;
+    width: 2px;
+    height: 100px;
+    background-color: red;
+    left: calc(50% - 1px);
+    top: 50%;
+    transform-origin: center 0;
+    animation-name: tick;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.minute {
+    position: absolute;
+    width: 4px;
+    height: 70px;
+    background-color: rgb(160, 3, 3);
+    left: calc(50% - 2px);
+    top: 50%;
+    transform-origin: center 0;
+    animation-name: tick;
+    animation-duration: 3600s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.hour {
+    position: absolute;
+    width: 8px;
+    height: 50px;
+    background-color: rgb(116, 2, 2);
+    left: calc(50% - 4px);
+    top: 50%;
+    transform-origin: center 0;
+    animation-name: tick;
+    animation-duration: 216000s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes tick {
+    0% {transform: rotate(-360deg)};
+}
