@@ -1,5 +1,6 @@
 /* imports of coponents ordered by abc */
 @import '../components/battery.css';
+@import '../components/battery2.css';
 @import '../components/clock.css';
 @import '../components/faster-clock.css';
 

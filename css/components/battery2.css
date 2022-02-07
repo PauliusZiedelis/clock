@@ -1,0 +1,63 @@
+.battery2{
+    position: absolute;
+    left: 300px;
+    top: 250px;
+    height: 100px;
+    width: 200px;
+    border-color: black;
+    background-color: black;
+    border-style: solid;
+    border-radius: 5%;
+    border-width: 10px;
+}
+
+.battery2::after{
+    content: "";
+    position: absolute;
+    top: calc((100px - 50px)/2 - 10px);
+    left: 200px;
+    height: 50px;
+    width: 10px;
+    border-color: black;
+    background-color: black;
+    border-radius: 15%;
+    border-style: solid;
+    border-width: 10px;
+}
+
+.battery2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    /* padding: 0; */
+    /* margin: 0; */
+    height: 100px;
+    width: 50px;
+    /* border-style: solid; */
+    /* border-width: 10px;
+    border-color: blue; */
+    background-color: black;
+    box-shadow: 50px 0 transparent,
+    100px 0 transparent,
+    150px 0 transparent;
+    animation: charging2 8s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes charging2 {
+
+    25% {background-color: red;}
+    50% {background-color: red;
+        box-shadow: 50px 0 yellow,
+        100px 0 transparent,
+        150px 0 transparent;}
+    75% {background-color: red;
+        box-shadow: 50px 0 yellow,
+        100px 0 yellowgreen,
+        150px 0 transparent;}
+    100% {background-color: red;
+        box-shadow: 50px 0 yellow,
+        100px 0 yellowgreen,
+        150px 0 green;}
+}
+
