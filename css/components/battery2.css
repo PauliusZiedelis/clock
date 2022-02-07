@@ -42,11 +42,13 @@
 
 @keyframes charging2 {
     0% {background-color: black;
-        box-shadow: 50px,
+        box-shadow: 50px 0 transparent,
         100px 0 transparent,
         150px 0 transparent;}
-    25% {background-color: red;}
-    /* 50% goes almost the same time as 25% and I don`t know why*/
+    25% {background-color: red;
+        box-shadow: 50px 0 transparent,
+        100px 0 transparent,
+        150px 0 transparent;}
     50% {background-color: red;
         box-shadow: 50px 0 yellow,
         100px 0 transparent,
