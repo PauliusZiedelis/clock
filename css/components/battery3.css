@@ -1,6 +1,6 @@
-.battery2{
+.battery3{
     position: absolute;
-    left: 300px;
+    left: 600px;
     top: 250px;
     height: 100px;
     width: 200px;
@@ -11,7 +11,7 @@
     border-width: 10px;
 }
 
-.battery2::after{
+.battery3::after{
     content: "";
     position: absolute;
     top: calc((100px - 50px)/2 - 10px);
@@ -25,7 +25,7 @@
     border-width: 10px;
 }
 
-.battery2::before{
+.battery3::before{
     content: "";
     position: absolute;
     top: 0;
@@ -35,29 +35,28 @@
     box-shadow: 50px 0 transparent,
     100px 0 transparent,
     150px 0 transparent;
-    animation: charging2 infinite;
+    animation: charging3 infinite;
     animation-timing-function: linear;
     animation-duration: 4s;
 }
 
-@keyframes charging2 {
+@keyframes charging3 {
     0% {background-color: black;
         box-shadow: 50px,
         100px 0 transparent,
         150px 0 transparent;}
     25% {background-color: red;}
     /* 50% goes almost the same time as 25% and I don`t know why*/
-    50% {background-color: red;
-        box-shadow: 50px 0 yellow,
+    50% {background-color: orangered;
+        box-shadow: 50px 0 orangered,
         100px 0 transparent,
         150px 0 transparent;}
-    75% {background-color: red;
-        box-shadow: 50px 0 yellow,
+    75% {background-color: yellowgreen;
+        box-shadow: 50px 0 yellowgreen,
         100px 0 yellowgreen,
         150px 0 transparent;}
-    100% {background-color: red;
-        box-shadow: 50px 0 yellow,
-        100px 0 yellowgreen,
+    100% {background-color: green;
+        box-shadow: 50px 0 green,
+        100px 0 green,
         150px 0 green;}
 }
-
